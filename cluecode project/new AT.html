@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student analysis</title>
+    <style>
+      header {
+    background-color:plum;
+    color: #070606;
+    text-align: center;
+    padding: 20px;
+      }  
+        .study-materials {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        /* Style for the study material items */
+        .material-item {
+            margin-bottom: 10px;
+        }
+
+        /* Style for headings */
+        h2 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0078d4;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #141313;
+    text-align: center;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.planner {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    margin: 5px 0;
+}
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.timetable {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    text-decoration: underline;
+}
+body {
+            font-family: bree, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        form {
+            display: outline-block;
+            text-align: left;
+        }
+        body {
+    font-family: Arial, sans-serif;
+}
+footer {
+    background-color:plum;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <HEADER>
+    <h1>ACADEMIC TOOLS</h1>
+     </HEADER>
+    <div class="study-materials">
+        <h2>Study Materials</h2>
+        <div class="material-item">
+            <a href="#">Subject 1 - Study Guide</a>
+        </div>
+        <div class="material-item">
+            <a href="#">Subject 2 - Lecture Notes</a>
+        </div>
+        <div class="material-item">
+            <a href="#">Subject 3 - Practice Quizzes</a>
+        </div>
+        <p style="text-align: center;">Refer our Library Tab for it!!</p>
+    
+    
+        <h1>Engineering Academic Planner</h1>
+    
+    <section class="planner">
+        <h2>Semester Courses</h2>
+        <ul>
+            <li>Course 1: Mathematics for Engineers</li>
+            <li>Course 2: Applied Science</li>
+            <li>Course 3: Engineering Graphics and Design</li>
+            <li>Course 4: Programming</li>
+            <li>Course 5: Basic Electrical Engineering</li>
+            <!-- Add more courses and details here -->
+        </ul>
+    </section>
+    <!-- Add sections for other semesters and additional content as needed -->
+</body>
+</html>
+
+    <body>
+        <div class="timetable">
+            <h2>Weekly Study Schedule</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Subject</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Math</td>
+                    <td>3:00 PM - 4:30 PM<BR>8:30 PM - 10:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Applied Science</td>
+                    <td>2:00 PM - 3:30 PM<br>9:00 PM - 10:30 PM</td>
+                </tr>
+                <TR>
+                    <td>Wednesday</td>
+                    <td>Coding</td>
+                    <td>3:00 PM - 4:30 PM<BR>8:30 PM - 10:00 PM</td>
+                </TR>
+                <tr>
+                    <td>Thursday</td>
+                    <td>EGD</td>
+                    <td>2:00 PM - 3:30 PM<BR>9:00 PM - 10:30 PM</td>
+                </tr>
+                <TR>
+                    <TD>Friday</TD>
+                    <td>Electrical subject</td>
+                    <td>3:00 PM - 4:30 PM<BR>8:30 PM - 10:00 PM</td>
+                </TR>
+                <tr>
+                <td>Saturday , Sunday</td>
+                <td>Revision- Subject of your choice</td>
+                <td>12:00 PM - 2:00 PM</td>
+                </tr>
+                 </table>
+        </div>
+        <h2>Student Academic Productivity Calculator</h2>
+
+    <form id="productivityForm">
+        <label for="hoursStudied">Hours Studied:</label>
+        <input type="number" id="hoursStudied" name="hoursStudied" required><br><br>
+
+        <label for="assignmentsCompleted">Assignments Completed:</label>
+        <input type="number" id="assignmentsCompleted" name="assignmentsCompleted" required><br><br>
+
+        <button type="button" onclick="calculateProductivity()">Calculate Productivity</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateProductivity() {
+            var hoursStudied = parseFloat(document.getElementById("hoursStudied").value);
+            var assignmentsCompleted = parseInt(document.getElementById("assignmentsCompleted").value);
+
+            var productivity = hoursStudied * 0.5 + assignmentsCompleted * 2;
+
+            document.getElementById("result").innerHTML = "<p>Student productivity score: " + productivity + "</p>";
+        }
+    </script>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <footer>
+        <p>&copy; 2023 E-STUDY</p>
+    </footer>
+
+</body>
+</html>
